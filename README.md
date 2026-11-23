@@ -6,11 +6,13 @@ An independent, local-only EPEVER BLE companion built from the offline device da
 
 - Scan for BLE devices and connect to the EPEVER dongle.
 - Select an EPEVER controller model from the bundled offline catalog.
-- Read common live values locally over BLE using Modbus RTU, with refresh every 10 seconds while live polling is on.
-- View supported model-listed 16-bit settings. A write requires a value and a second confirmation; every change is sent directly to the controller.
+- Read live values locally over BLE using the EPEVER model formulas and register word order; refresh every 10 seconds while live polling is on.
+- View generation and usage totals as numeric tiles, and PV, battery, load, and device readings as animated needle gauges.
+- View supported model-listed 16-bit settings with their current controller values; enter changes and submit them with **Einstellung übernehmen**. Each write requires confirmation and is sent directly to the controller.
+- Return from settings to live data with the back button, see an animated five-second startup screen, and keep the connection log to its latest five lines.
 - No cloud, account, remote access, or network calls are included.
 
-This is a first local companion focused on BLE, live values, and basic settings; it is not yet a screen-for-screen replacement for every Solar Guardian feature. Charts, history, LoRa, cloud, and account features are not included. Only simple 16-bit settings are exposed, and values are written directly to the controller.
+This is a local companion focused on BLE, live values, and basic settings; it is not yet a screen-for-screen replacement for every Solar Guardian feature. Charts, history, LoRa, cloud, and account features are not included. Only simple 16-bit settings are exposed, and values are written directly to the controller.
 
 ## Build the debug APK with GitHub Actions
 
